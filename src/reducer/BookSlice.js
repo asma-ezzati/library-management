@@ -29,6 +29,18 @@ export const addBooks = createAsyncThunk(
   }
 );
 
+export const editBook = createAsyncThunk(
+  "books/editBooks",
+  async (initialBook) => {
+    try {
+      const response = await axios.put(`url/${initialBook.id}`, initialBook);
+      return response.data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+);
+
 export const booksSlice = createSlice({
   name: "books",
   initialState: initialState,
