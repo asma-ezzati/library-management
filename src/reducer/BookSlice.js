@@ -1,7 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const BookSlice = createSlice({
+export const booksSlice = createSlice({
   name: "books",
   initialState,
   reducers: {},
 });
+
+export default booksSlice.reducer;
