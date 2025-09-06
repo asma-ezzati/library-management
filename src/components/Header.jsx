@@ -1,6 +1,10 @@
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-
 const Header = () => {
-  return <></>;
+  return (
+    <>
+      <nav>
+        <p>Library</p>
+      </nav>
+    </>
+  );
 };
 export default Header;
