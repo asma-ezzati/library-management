@@ -89,3 +89,7 @@ export const booksSlice = createSlice({
 });
 
 export default booksSlice.reducer;
+
+export const { selectAll, selectById, selectIds } = booksAdapter.getSelectors(
+  (state) => state.books
+);
