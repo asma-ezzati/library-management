@@ -9,6 +9,9 @@ export default {
       green2: "#B0C4B1",
       green3: "#4A5759",
     },
+    fontFamily: {
+      Vazir: ["Vazir"],
+    },
   },
   plugins: [],
 };
