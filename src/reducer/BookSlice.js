@@ -1,12 +1,19 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import {
+  createSlice,
+  createAsyncThunk,
+  createEntityAdapter,
+} from "@reduxjs/toolkit";
 import axios from "axios";
 
 const url = "http://localhost:9000/books";
 
-const initialState = {
-  items: [],
+const booksAdapter = createEntityAdapter({
+  sortComparer: (a, b) => a.title.localeCompare(b.title),
+});
+
+const initialState = booksAdapter.getInitialState({
   status: "idle",
-};
+});
 
 export const fetchBooks = createAsyncThunk("books/fetchBooks", async () => {
   try {
