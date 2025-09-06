@@ -64,6 +64,28 @@ export const booksSlice = createSlice({
   name: "books",
   initialState: initialState,
   reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchBooks.pending, (state, action) => {
+        state.status = "pending";
+      })
+      .addCase(fetchBooks.fulfilled, (state, action) => {
+        state.status = "success";
+        booksAdapter.setAll(state, action.payload);
+      })
+      .addCase(fetchBooks.rejected, (state, action) => {
+        state.status = "rejected";
+      })
+      .addCase(addBooks.fulfilled, (state, action) => {
+        booksAdapter.addOne(state, action.payload);
+      })
+      .addCase(editBook.fulfilled, (state, action) => {
+        booksAdapter.updateOne(state, action.payload);
+      })
+      .addCase(deleteBook.fulfilled, (state, action) => {
+        booksAdapter.removeOne(state, action.payload);
+      });
+  },
 });
 
 export default booksSlice.reducer;
