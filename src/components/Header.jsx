@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <>
-      <nav>
+      <nav className="bg-pink2 w-full h-10">
         <p>Library</p>
       </nav>
     </>
