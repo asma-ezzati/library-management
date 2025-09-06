@@ -1,3 +1,4 @@
+import Banner from "./components/Banner";
 import Header from "./components/Header";
 
 const App = () => {
@@ -5,7 +6,7 @@ const App = () => {
     <>
       <div>
         <Header />
-        <h1>hi</h1>
+        <Banner />
       </div>
     </>
   );
