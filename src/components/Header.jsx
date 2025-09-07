@@ -21,16 +21,16 @@ const Header = () => {
 
           {/* کتاب ها */}
 
-          <a href="books" className="mx-2 font-Vazir">
+          <a href="#books" className="mx-2 font-Vazir">
             کتاب ها
           </a>
 
           {/* دسته بندی */}
-          <a href="category" className="mx-2 font-Vazir">
+          <a href="#category" className="mx-2 font-Vazir">
             دسته بندی
           </a>
           {/* درباره ما */}
-          <a href="aboutUs" className="mx-2 font-Vazir">
+          <a href="#aboutUs" className="mx-2 font-Vazir">
             درباره ما
           </a>
           {/* ثبت نام */}
