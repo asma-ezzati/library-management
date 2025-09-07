@@ -8,7 +8,7 @@ import axios from "axios";
 const url = "http://localhost:9000/books";
 
 const booksAdapter = createEntityAdapter({
-  sortComparer: (a, b) => a.title.localeCompare(b.title),
+  // sortComparer: (a, b) => a.title.localeCompare(b.title),
 });
 
 const initialState = booksAdapter.getInitialState({

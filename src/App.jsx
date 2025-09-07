@@ -1,4 +1,5 @@
 import Banner from "./components/Banner";
+import Books from "./components/Books";
 import Header from "./components/Header";
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
       <div>
         <Header />
         <Banner />
+        <Books />
       </div>
     </>
   );
