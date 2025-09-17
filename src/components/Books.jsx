@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { selectAll } from "../reducer/BookSlice";
 import { Link } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
 
 const Books = () => {
   const allbooks = useSelector(selectAll);
@@ -8,7 +9,7 @@ const Books = () => {
   const lastThree = allbooks.slice(-3).reverse();
 
   return (
-    <div className="bg-pink2 h-[600px]" id="books">
+    <div className="bg-pink2 h-[720px]" id="books">
       <h1 className="text-green3 font-Vazir font-bold text-2xl py-8 text-center ">
         جدیدترین کتاب ها
       </h1>
@@ -28,7 +29,7 @@ const Books = () => {
                 ></img>
 
                 <div className=" bg-pink2 opacity-0  absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center  text-center p-4  group-hover:opacity-100 transition-opacity duration-300">
-                  <h2 className=" font-Vazir text-center text-green3 font-bold py-3 pt-6  ">
+                  <h2 className=" font-Vazir text-center text-green3 font-bold text-2xl py-3 pt-6  ">
                     {book.title}
                   </h2>
                   <hr className="border-green3 border-t-2 w-1/2 mx-auto rounded-full"></hr>
@@ -39,7 +40,7 @@ const Books = () => {
                     {book.genre}
                   </h4>
                   <h4 className=" font-Vazir text-center text-green3 font-bold py-2 ">
-                    {book.price}
+                    قیمت : {book.price}
                   </h4>
                 </div>
               </Link>
@@ -47,13 +48,15 @@ const Books = () => {
           </>
         ))}
       </div>
-
-      <Link
-        to={"/books"}
-        className="flex justify-center  bg-green1 border-2 border-green2 py-5 my-5 mx-40 rounded-2xl"
-      >
-        لیست کل کتاب ها
-      </Link>
+      <div className="flex justify-end ml-16 my-10">
+        <Link
+          to={"/books"}
+          className=" flex  w-60 justify-center font-Vazir text-green3 font-semibold bg-gradient-to-tr from-pink1 via-pink2  to-white hover:bg-gradient-to-tr hover:from-white hover:via-pink2 hover:to-pink1 hover:transition  duration-75 border-2 border-pink2  py-5   rounded-2xl"
+        >
+          لیست کتاب ها
+          <FaArrowLeft className="m-1" />
+        </Link>
+      </div>
     </div>
   );
 };
