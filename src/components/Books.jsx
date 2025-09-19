@@ -5,7 +5,6 @@ import { FaArrowLeft } from "react-icons/fa";
 
 const Books = () => {
   const allbooks = useSelector(selectAll);
-  console.log(allbooks);
   const lastThree = allbooks.slice(-3).reverse();
 
   return (
