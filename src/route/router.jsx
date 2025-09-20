@@ -4,6 +4,7 @@ import SignupPage from "../components/SignupPage";
 import BooksList from "../components/BooksList";
 import SingleBooksPage from "../components/SingleBooksPage";
 import PannelAdmin from "../components/pannelAdmin";
+import AddBook from "../components/AddBook";
 
 export const router = createBrowserRouter([
   {
@@ -25,5 +26,11 @@ export const router = createBrowserRouter([
   {
     path: "/admin",
     element: <PannelAdmin />,
+    children: [
+      {
+        path: "/admin/additem",
+        element: <AddBook />,
+      },
+    ],
   },
 ]);
