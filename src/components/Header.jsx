@@ -34,9 +34,15 @@ const Header = () => {
             درباره ما
           </a>
           {/* ثبت نام */}
-          <div className="">
+          <div>
             <Link to={"/signup"} className="mx-2 font-Vazir float-end col-12">
               ثبت نام
+            </Link>
+          </div>
+          {/* پنل ادمین */}
+          <div>
+            <Link to={"/admin"} className="mx-2 font-Vazir ">
+              پنل مدیریت
             </Link>
           </div>
         </div>
