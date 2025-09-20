@@ -3,6 +3,7 @@ import App from "../App";
 import SignupPage from "../components/SignupPage";
 import BooksList from "../components/BooksList";
 import SingleBooksPage from "../components/SingleBooksPage";
+import PannelAdmin from "../components/pannelAdmin";
 
 export const router = createBrowserRouter([
   {
@@ -20,5 +21,9 @@ export const router = createBrowserRouter([
   {
     path: "/books/:booksId",
     element: <SingleBooksPage />,
+  },
+  {
+    path: "/admin",
+    element: <PannelAdmin />,
   },
 ]);
