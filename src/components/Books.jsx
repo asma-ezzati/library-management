@@ -8,7 +8,7 @@ const Books = () => {
   const lastThree = allbooks.slice(-3).reverse();
 
   return (
-    <div className="bg-pink2 h-[720px] min-h-screen" id="books">
+    <div className="bg-pink2 h-[720px] min-h-screen py-8" id="books">
       <h1 className="text-green3 font-Vazir font-bold text-2xl py-5 text-center ">
         جدیدترین کتاب ها
       </h1>
