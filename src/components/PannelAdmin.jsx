@@ -1,3 +1,5 @@
+import Sidebar from "./Sidebar";
+
 const PannelAdmin = () => {
   return (
     <>
@@ -5,6 +7,7 @@ const PannelAdmin = () => {
         <h1 className="font-Vazir font-extrabold text-green3 text-2xl text-center py-5 ">
           پنل مدیریتی
         </h1>
+        <Sidebar />
       </div>
     </>
   );
