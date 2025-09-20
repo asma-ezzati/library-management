@@ -12,7 +12,6 @@ const AddBook = () => {
           <input
             id="title"
             type="text"
-            placeholder="title"
             className="w-full p-2 rounded-lg font-Vazir text-green3 m-2 bg-white border-2 border-pink2 focus:outline-pink1"
           />
 
@@ -25,7 +24,6 @@ const AddBook = () => {
           <input
             id="author"
             type="text"
-            placeholder="author"
             className="w-full p-2 rounded-lg font-Vazir text-green3 m-2 bg-white border-2 border-pink2 focus:outline-pink1"
           />
 
@@ -38,7 +36,6 @@ const AddBook = () => {
           <input
             id="year"
             type="text"
-            placeholder="year"
             className="w-full p-2 rounded-lg font-Vazir text-green3 m-2 bg-white border-2 border-pink2 focus:outline-pink1"
           />
 
@@ -51,7 +48,6 @@ const AddBook = () => {
           <input
             id="genre"
             type="text"
-            placeholder="genre"
             className="w-full p-2 rounded-lg font-Vazir text-green3 m-2 bg-white border-2 border-pink2 focus:outline-pink1"
           />
 
@@ -64,7 +60,6 @@ const AddBook = () => {
           <input
             id="price"
             type="text"
-            placeholder="price"
             className="w-full p-2 rounded-lg font-Vazir text-green3 m-2 bg-white border-2 border-pink2 focus:outline-pink1"
           />
 
@@ -77,7 +72,6 @@ const AddBook = () => {
           <input
             id="image"
             type="text"
-            placeholder="image"
             className="w-full p-2 rounded-lg font-Vazir text-green3 m-2 bg-white border-2 border-pink2 focus:outline-pink1"
           />
         </form>
