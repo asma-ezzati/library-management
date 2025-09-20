@@ -1,4 +1,21 @@
+import { Link } from "react-router-dom";
+import { FaPlus, FaEdit, FaTrashAlt } from "react-icons/fa";
+
 const Sidebar = () => {
-  return <h1>Sidebar</h1>;
+  return (
+    <>
+      <div className=" w-[80px] h-auto bg-green3 m-5 rounded-xl flex flex-wrap flex-col p-5  ">
+        <Link className=" text-white my-4 mx-auto">
+          <FaPlus size={30} />
+        </Link>
+        <Link className=" text-white my-4 mx-auto">
+          <FaEdit size={30} />
+        </Link>
+        <Link className=" text-white my-4 mx-auto">
+          <FaTrashAlt size={30} />
+        </Link>
+      </div>
+    </>
+  );
 };
 export default Sidebar;
