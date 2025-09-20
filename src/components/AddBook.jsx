@@ -74,6 +74,12 @@ const AddBook = () => {
             type="text"
             className="w-full p-2 rounded-lg font-Vazir text-green3 m-2 bg-white border-2 border-pink2 focus:outline-pink1"
           />
+          <button
+            className="w-full bg-pink1 mt-6 mx-3 text-white px-[48px] py-[10px] rounded-[6px]  transition duration-75 hover:text-pink1 hover:bg-pink2 hover:transition  hover:duration-75"
+            type="submit"
+          >
+            ثبت
+          </button>
         </form>
       </main>
     </>
