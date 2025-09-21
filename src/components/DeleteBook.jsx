@@ -37,7 +37,7 @@ const DeleteBook = () => {
               </h1>
 
               <button
-                className=" flex justify-center   w-full border-2 border-green2 rounded-xl  mt-8 px-2 py-3 font-Vazir text-white font-bold bg-green2
+                className=" flex justify-center   w-full border-2 border-green3 rounded-xl  mt-8 px-2 py-3 font-Vazir text-white font-bold bg-green3
               hover:bg-pink1 hover:border-2 hover:border-pink1 "
               >
                 حذف کتاب
