@@ -6,6 +6,7 @@ import SingleBooksPage from "../components/SingleBooksPage";
 import PannelAdmin from "../components/pannelAdmin";
 import AddBook from "../components/AddBook";
 import EditBook from "../components/EditBook";
+import DeleteBook from "../components/DeleteBook";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
       {
         path: "/admin/edititem",
         element: <EditBook />,
+      },
+      {
+        path: "/admin/deleteitem",
+        element: <DeleteBook />,
       },
     ],
   },
