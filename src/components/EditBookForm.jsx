@@ -1,4 +1,4 @@
-const EditBook = () => {
+const EditBookForm = () => {
   return (
     <>
       <main className="w-[50%] mx-[220px] flex justify-center items-center bg-white p-8 m-5 rounded-xl border-2 border-pink1">
@@ -85,4 +85,4 @@ const EditBook = () => {
     </>
   );
 };
-export default EditBook;
+export default EditBookForm;
