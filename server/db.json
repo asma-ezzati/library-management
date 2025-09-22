@@ -1,49 +1,31 @@
 {
   "books": [
     {
-      "id": 1,
+      "id": "1",
       "title": "صد سال تنهایی",
       "author": "گابریل گارسیا مارکز",
       "year": 1967,
       "genre": "رمان",
       "price": 250000,
-      "image":"/images/1.webp"
+      "image": "/images/1.webp"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "جنایت و مکافات",
       "author": "فئودور داستایوفسکی",
       "year": 1866,
       "genre": "داستان کلاسیک",
       "price": 180000,
-      "image":"/images/2.webp"
+      "image": "/images/2.webp"
     },
     {
-      "id": 3,
-      "title": "کیمیاگر",
-      "author": "پائولو کوئیلو",
-      "year": 1988,
-      "genre": "رمان فلسفی",
-      "price": 150000,
-      "image":"/images/3.webp"
-    },
-    {
-      "id": 4,
+      "id": "4",
       "title": "قلعه حیوانات",
       "author": "جرج اورول",
       "year": 1945,
       "genre": "داستان سیاسی",
       "price": 120000,
-      "image":"/images/4.webp"
-    },
-    {
-      "id": 5,
-      "title": "شازده کوچولو",
-      "author": "آنتوان دو سنت اگزوپری",
-      "year": 1943,
-      "genre": "داستان کوتاه",
-      "price": 100000,
-      "image":"/images/5.webp"
+      "image": "/images/4.webp"
     }
   ]
 }
