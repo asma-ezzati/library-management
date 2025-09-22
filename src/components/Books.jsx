@@ -9,9 +9,18 @@ const Books = () => {
 
   return (
     <div className="bg-pink2 h-[720px] min-h-screen py-8" id="books">
-      <h1 className="text-green3 font-Vazir font-bold text-2xl py-5 text-center ">
-        جدیدترین کتاب ها
-      </h1>
+      <div className="flex justify-between">
+        <h1 className="text-green3 font-Vazir font-bold text-2xl py-5 text-right mr-16 ">
+          جدیدترین کتاب ها
+        </h1>
+        <Link
+          to={"/books"}
+          className=" flex w-[170px] ml-16  justify-center font-Vazir text-green3 text-xl font-semibold  border-2 border-pink2  py-5  rounded-2xl hover:border-2 transition duration-200 hover:border-green3 hover:transition hover:duration-200 "
+        >
+          لیست کتاب ها
+          <FaArrowLeft className="m-1 mr-2" />
+        </Link>
+      </div>
       <div className="flex justify-around flex-row ">
         {lastThree.map((book) => (
           <>
@@ -46,15 +55,6 @@ const Books = () => {
             </div>
           </>
         ))}
-      </div>
-      <div className="flex justify-end ml-16 my-10">
-        <Link
-          to={"/books"}
-          className=" flex  w-60 justify-center font-Vazir text-green3 font-semibold bg-gradient-to-tr from-pink1 via-pink2  to-white hover:bg-gradient-to-tr hover:from-white hover:via-pink2 hover:to-pink1 hover:transition  duration-75 border-2 border-pink2  py-5   rounded-2xl"
-        >
-          لیست کتاب ها
-          <FaArrowLeft className="m-1" />
-        </Link>
       </div>
     </div>
   );
