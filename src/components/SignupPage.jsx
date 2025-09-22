@@ -7,8 +7,12 @@ const SignupPage = () => {
       <main className="min-h-screen bg-pink2 flex items-center place-content-center ">
         <div className="flex items-center bg-white border-2 border-pink1 rounded-[16px] p-[6px] w-[90vw] shadow-md ">
           <div className="p-[32px] w-[50%] ">
-            <h2 className="font-Vazir m-0 font-[32px] mb-[20px] "></h2>
-            <h3 className="font-Vazir m-0  font-[14px] mb-[40px]  "></h3>
+            <h2 className="font-Vazir text-green3 font-extrabold text-xl  m-0  mb-[20px] ">
+              فرم ثبت نام
+            </h2>
+            <h3 className="font-Vazir text-green3 font-extrabold m-0 text-md  mb-[40px]  ">
+              خوش اومدید (●'◡'●)
+            </h3>
             <form>
               <input
                 type="email"
