@@ -6,7 +6,7 @@
       "author": "گابریل گارسیا مارکز",
       "year": 1967,
       "genre": "رمان",
-      "price": 250000,
+      "price": "250000",
       "image": "/images/1.webp"
     },
     {
@@ -24,7 +24,7 @@
       "author": "جرج اورول",
       "year": 1945,
       "genre": "داستان سیاسی",
-      "price": 120000,
+      "price": "130000",
       "image": "/images/4.webp"
     },
     {
