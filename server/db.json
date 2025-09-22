@@ -26,6 +26,42 @@
       "genre": "داستان سیاسی",
       "price": 120000,
       "image": "/images/4.webp"
+    },
+    {
+      "id": "8188",
+      "title": "کیمیاگر",
+      "author": "پائولو کوئیلو",
+      "year": "1988",
+      "genre": "رمان فلسفی",
+      "price": "95000",
+      "image": "/images/3.webp"
+    },
+    {
+      "id": "9c5b",
+      "title": "شازده کوچولو",
+      "author": "آنتوان دوسنت اگزوپری",
+      "year": "1943",
+      "genre": "داستان",
+      "price": "80000",
+      "image": "/images/5.webp"
+    },
+    {
+      "id": "d9b9",
+      "title": "پیرمرد و دریا",
+      "author": "ارنست همینگوی",
+      "year": "1952",
+      "genre": "رمان کوتاه",
+      "price": "70000",
+      "image": "/images/6.webp"
+    },
+    {
+      "id": "80d5",
+      "title": "بینوایان",
+      "author": "ویکتور هوگو",
+      "year": "1862",
+      "genre": "رمان",
+      "price": "150000",
+      "image": "/images/7.webp"
     }
   ]
 }
