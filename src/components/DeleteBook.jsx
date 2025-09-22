@@ -6,6 +6,10 @@ const DeleteBook = () => {
   const dispatch = useDispatch();
   const books = useSelector(selectAll);
 
+  // const SubmitHandler = () => {
+  //   dispatch(deleteBook(book.id));
+  // };
+
   return (
     <>
       <div className="flex justify-center items-center flex-wrap mt-5 ">
@@ -37,6 +41,8 @@ const DeleteBook = () => {
               </h1>
 
               <button
+                type="button"
+                onClick={() => dispatch(deleteBook(book.id))}
                 className=" flex justify-center   w-full border-2 border-green3 rounded-xl  mt-8 px-2 py-3 font-Vazir text-white font-bold bg-green3
               hover:bg-pink1 hover:border-2 hover:border-pink1 "
               >
