@@ -40,7 +40,10 @@ export const editBook = createAsyncThunk(
   "books/editBooks",
   async (initialBook) => {
     try {
-      const response = await axios.put(`url/${initialBook.id}`, initialBook);
+      const response = await axios.put(
+        `http://localhost:9000/books/${initialBook.id}`,
+        initialBook
+      );
       return response.data;
     } catch (error) {
       console.log(error);
@@ -52,7 +55,9 @@ export const deleteBook = createAsyncThunk(
   "book/deleteBooks",
   async (initialBookId) => {
     try {
-      const response = await axios.delete(`url/${initialBookId}`);
+      const response = await axios.delete(
+        `http://localhost:9000/books/${initialBookId}`
+      );
       return response.data;
     } catch (error) {
       console.log(error);
