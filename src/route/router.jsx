@@ -7,6 +7,7 @@ import PannelAdmin from "../components/pannelAdmin";
 import AddBook from "../components/AddBook";
 import EditBook from "../components/EditBook";
 import DeleteBook from "../components/DeleteBook";
+import EditBookForm from "../components/EditBookForm";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
       {
         path: "/admin/edititem",
         element: <EditBook />,
+      },
+      {
+        path: "/admin/edititem/:bookId",
+        element: <EditBookForm />,
       },
       {
         path: "/admin/deleteitem",
