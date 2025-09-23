@@ -14,7 +14,7 @@ const BookSearch = () => {
 
   return (
     <>
-      <div className="absolute inset-0 flex items-center justify-center ">
+      <div className="flex flex-col items-center mt-10 ">
         <input
           value={query}
           onChange={onChangeInput}
