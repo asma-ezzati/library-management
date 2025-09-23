@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaPlus, FaEdit, FaTrashAlt } from "react-icons/fa";
 import { IoMdExit } from "react-icons/io";
 
@@ -6,27 +6,38 @@ const Sidebar = () => {
   return (
     <>
       <div className=" w-[80px] h-[300px] bg-white m-5 rounded-xl flex flex-wrap flex-col p-5  ">
-        <Link
+        <NavLink
           to={"/admin/edititem"}
-          className=" text-green2 my-4 mx-auto focus:text-pink1"
+          className={({ isActive }) =>
+            `my-4 mx-auto ${isActive ? "text-pink1" : "text-green2"} `
+          }
         >
           <FaEdit size={30} />
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to={"/admin/additem"}
-          className="text-green2 my-4 mx-auto focus:text-pink1"
+          className={({ isActive }) =>
+            `my-4 mx-auto ${isActive ? "text-pink1" : "text-green2"} `
+          }
         >
           <FaPlus size={30} />
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to={"/admin/deleteitem"}
-          className="text-green2 my-4 mx-auto focus:text-pink1"
+          className={({ isActive }) =>
+            `my-4 mx-auto ${isActive ? "text-pink1" : "text-green2"} `
+          }
         >
           <FaTrashAlt size={30} />
-        </Link>
-        <Link to={"/"} className="text-green2 my-4 mx-auto focus:text-pink1">
+        </NavLink>
+        <NavLink
+          to={"/"}
+          className={({ isActive }) =>
+            `my-4 mx-auto ${isActive ? "text-pink1" : "text-green2"} `
+          }
+        >
           <IoMdExit size={38} />
-        </Link>
+        </NavLink>
       </div>
     </>
   );
