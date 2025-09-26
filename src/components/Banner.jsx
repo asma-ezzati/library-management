@@ -9,7 +9,9 @@ const Banner = () => {
           src={banner}
           className="w-full h-full object-contain blur-[2px] "
         ></img>
-        <BookSearch />
+        <div className="text-center absolute inset-0 p-32">
+          <BookSearch />
+        </div>
       </div>
     </>
   );
