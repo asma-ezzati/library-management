@@ -25,20 +25,29 @@ const BookSearch = () => {
               focus:outline-none focus:border-2 focus:border-pink1 focus:transition-transform  focus:duration-1000  
               "
         ></input>
-        {query && (
-          <ul className=" mt-1 bg-white border-2 border-pink1 rounded-lg w-[550px] max-h-64 overflow-auto">
-            {filteredBooks.map((book) => (
-              <li
-                key={book.id}
-                className="p-2 border-b border-pink1 font-Vazir text-green3"
-              >
-                <Link to={`/books/${book.id}`} className="hover:text-pink1">
-                  {book.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}
+        {query &&
+          (filteredBooks.length > 0 ? (
+            <ul className=" mt-1 bg-white border-2 border-pink1 rounded-lg w-[550px] max-h-64 overflow-auto">
+              {filteredBooks.map((book) => (
+                <li
+                  key={book.id}
+                  className="p-2 border-b border-pink1 font-Vazir text-green3"
+                >
+                  <Link
+                    onClick={() => setQuery(" ")}
+                    to={`/books/${book.id}`}
+                    className="hover:text-pink1"
+                  >
+                    {book.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className=" mt-1 bg-white border-2 border-pink1 rounded-lg w-[550px] max-h-64 overflow-auto p-2 border-b  font-Vazir text-green3">
+              دلبندم متاسفانه همچین کتابی نداریم 😭
+            </p>
+          ))}
       </div>
     </>
   );
