@@ -27,7 +27,10 @@ const BookSearch = () => {
         {query && (
           <ul className=" mt-1 bg-white border-2 border-pink1 rounded-lg w-[550px] max-h-64 overflow-auto">
             {filteredBooks.map((book) => (
-              <li key={book.id} className="p-2 border-b font-Vazir text-green3">
+              <li
+                key={book.id}
+                className="p-2 border-b border-pink1 font-Vazir text-green3"
+              >
                 {book.title}
               </li>
             ))}
