@@ -26,21 +26,22 @@ const AboutUs = () => {
               <Link
                 to={"https://web.telegram.org/k/"}
                 target="_blank"
-                className="text-green3  mx-5 hover:text-green2 transition duration-100 hover:transition hover:duration-100 "
+                className="text-green3  mx-5 border-2 p-2 rounded-full hover:text-green2 transition duration-100 hover:transition hover:duration-100 
+                 "
               >
                 <FaTelegram size={30} />
               </Link>
               <Link
                 to={"https://www.instagram.com/"}
                 target="_blank"
-                className="text-green3  mx-5 hover:text-green2 transition duration-100 hover:transition hover:duration-100 "
+                className="text-green3  mx-5 border-2 p-2 rounded-full hover:text-green2 transition duration-100 hover:transition hover:duration-100 "
               >
                 <RiInstagramLine size={30} />
               </Link>
               <Link
                 to={"https://web.whatsapp.com/"}
                 target="_blank"
-                className="text-green3  mx-5 hover:text-green2 transition duration-100 hover:transition hover:duration-100 "
+                className="text-green3  mx-5 border-2 p-2 rounded-full hover:text-green2 transition duration-100 hover:transition hover:duration-100 "
               >
                 <FaWhatsapp size={30} />
               </Link>
