@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { selectById } from "../reducer/BookSlice";
 import { FaArrowLeft } from "react-icons/fa";
+import { HiOutlineHome } from "react-icons/hi";
 
 const SingleBooksPage = () => {
   const { bookId } = useParams();
@@ -48,6 +49,12 @@ const SingleBooksPage = () => {
             className=" p-3 my-3 mx-10 flex justify-center font-Vazir text-green3 text-xl font-semibold  border-2 border-pink2    rounded-full hover:border-2 transition duration-200 hover:border-green3 hover:transition hover:duration-200 "
           >
             <FaArrowLeft className="m-1 mr-2" />
+          </Link>
+          <Link
+            to={"/"}
+            className=" p-3 my-3 mx-10 flex justify-center font-Vazir text-green3 text-xl font-semibold  border-2 border-pink2    rounded-full hover:border-2 transition duration-200 hover:border-green3 hover:transition hover:duration-200 "
+          >
+            <HiOutlineHome size={30} className="m-1 mr-2" />
           </Link>
         </div>
       </div>
