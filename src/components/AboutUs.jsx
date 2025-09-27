@@ -1,4 +1,7 @@
 import AboutUspic from "../assets/aboutus-pic.jpg";
+import { FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { RiInstagramLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -15,15 +18,33 @@ const AboutUs = () => {
             <img src={AboutUspic} className="rounded-xl"></img>
           </div>
           <div>
-            <p className=" font-Vazir text-green3 font-semibold m-3 text-center my-20 ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <h1 className=" font-Vazir text-green3 font-semibold m-2 text-center my-20 ">
+              برای ارتباط با من میتونی از طریق سوشال مدیا بهم دسترسی داشته باشی
+              کافیه روی یکی از لینک های زیر کلیک کنی 😁
+            </h1>
+            <div className="flex items-center justify-center">
+              <Link
+                to={"https://web.telegram.org/k/"}
+                target="_blank"
+                className="text-green3  mx-5 hover:text-green2 transition duration-100 hover:transition hover:duration-100 "
+              >
+                <FaTelegram size={30} />
+              </Link>
+              <Link
+                to={"https://www.instagram.com/"}
+                target="_blank"
+                className="text-green3  mx-5 hover:text-green2 transition duration-100 hover:transition hover:duration-100 "
+              >
+                <RiInstagramLine size={30} />
+              </Link>
+              <Link
+                to={"https://web.whatsapp.com/"}
+                target="_blank"
+                className="text-green3  mx-5 hover:text-green2 transition duration-100 hover:transition hover:duration-100 "
+              >
+                <FaWhatsapp size={30} />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
