@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { useState } from "react";
 import { selectAll } from "../reducer/BookSlice";
+import { Link } from "react-router-dom";
 
 const BookSearch = () => {
   const books = useSelector(selectAll);
@@ -31,7 +32,9 @@ const BookSearch = () => {
                 key={book.id}
                 className="p-2 border-b border-pink1 font-Vazir text-green3"
               >
-                {book.title}
+                <Link to={`/books/${book.id}`} className="hover:text-pink1">
+                  {book.title}
+                </Link>
               </li>
             ))}
           </ul>
