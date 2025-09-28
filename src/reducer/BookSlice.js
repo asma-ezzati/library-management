@@ -2,6 +2,7 @@ import {
   createSlice,
   createAsyncThunk,
   createEntityAdapter,
+  createSelector,
 } from "@reduxjs/toolkit";
 import axios from "axios";
 
@@ -94,6 +95,11 @@ export const booksSlice = createSlice({
 });
 
 export default booksSlice.reducer;
+
+export const selectCategoryBooks = createSelector(
+  [selectAll, (state, catId) => catId],
+  (books, catId) => books.filter((book) => book.genre === catId)
+);
 
 export const { selectAll, selectById, selectIds } = booksAdapter.getSelectors(
   (state) => state.books
