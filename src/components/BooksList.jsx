@@ -2,9 +2,12 @@ import { useSelector } from "react-redux";
 import { selectAll } from "../reducer/BookSlice";
 import { Link } from "react-router-dom";
 import { IoGlassesOutline } from "react-icons/io5";
+import { selectBooksWithGenre } from "../reducer/selectors/selector";
 
 const BooksList = () => {
-  const books = useSelector(selectAll);
+  // const books = useSelector(selectAll);
+  const books = useSelector(selectBooksWithGenre);
+  console.log(books);
   return (
     <>
       <div className=" w-[100%] min-h-screen bg-pink2">
@@ -34,7 +37,7 @@ const BooksList = () => {
                     {book.author}
                   </h4>
                   <h4 className=" font-Vazir text-center text-green3 font-bold text-xl  py-2 ">
-                    {book.genre}
+                    {book.genreName}
                   </h4>
                   <h4 className=" font-Vazir text-center text-green3 font-bold py-2 ">
                     قیمت : {book.price}

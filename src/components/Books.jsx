@@ -2,9 +2,10 @@ import { useSelector } from "react-redux";
 import { selectAll } from "../reducer/BookSlice";
 import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
+import { selectBooksWithGenre } from "../reducer/selectors/selector";
 
 const Books = () => {
-  const allbooks = useSelector(selectAll);
+  const allbooks = useSelector(selectBooksWithGenre);
   const lastThree = allbooks.slice(-3).reverse();
 
   return (
@@ -45,7 +46,7 @@ const Books = () => {
                     {book.author}
                   </h4>
                   <h4 className=" font-Vazir text-center text-green3 font-bold py-2 ">
-                    {book.genre}
+                    {book.genreName}
                   </h4>
                   <h4 className=" font-Vazir text-center text-green3 font-bold py-2 ">
                     قیمت : {book.price}
