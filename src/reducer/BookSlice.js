@@ -95,12 +95,11 @@ export const booksSlice = createSlice({
 });
 
 export default booksSlice.reducer;
+export const { selectAll, selectById, selectIds } = booksAdapter.getSelectors(
+  (state) => state.books
+);
 
 export const selectCategoryBooks = createSelector(
   [selectAll, (state, catId) => catId],
   (books, catId) => books.filter((book) => book.genre === catId)
-);
-
-export const { selectAll, selectById, selectIds } = booksAdapter.getSelectors(
-  (state) => state.books
 );
