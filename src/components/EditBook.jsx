@@ -1,10 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
 import { selectAll } from "../reducer/BookSlice";
 import { Link } from "react-router-dom";
+import { selectBooksWithGenre } from "../reducer/selectors/selector";
 
 const EditBook = () => {
   const dispatch = useDispatch();
-  const books = useSelector(selectAll);
+  const books = useSelector(selectBooksWithGenre);
 
   return (
     <>
@@ -30,7 +31,7 @@ const EditBook = () => {
                 سال : {book.year}
               </h1>
               <h1 className="font-Vazir font-bold text-green3 py-2 text-center  ">
-                ژانر : {book.genre}
+                ژانر : {book.genreName}
               </h1>
               <h1 className="font-Vazir font-bold text-green3 py-2 text-center  ">
                 قیمت : {book.price}
