@@ -3,10 +3,16 @@ import { Link, useParams } from "react-router-dom";
 import { selectById } from "../reducer/BookSlice";
 import { FaArrowLeft } from "react-icons/fa";
 import { HiOutlineHome } from "react-icons/hi";
+import { selectByCatIds } from "../reducer/CategorySlice";
 
 const SingleBooksPage = () => {
   const { bookId } = useParams();
   const book = useSelector((state) => selectById(state, bookId));
+
+  const category = useSelector(
+    (state) => selectByCatIds(state, book.genre) // چون book.genre = id کتگوری
+  );
+
   return (
     <>
       <div className=" bg-pink2 min-h-screen flex justify-center items-center ">
@@ -23,7 +29,7 @@ const SingleBooksPage = () => {
               سال : {book.year}
             </h1>
             <h1 className=" font-Vazir font-bold text-green3 text-xl p-1 m-2 ">
-              ژانر : {book.genre}
+              ژانر : {category.genre}
             </h1>
             <h1 className=" font-Vazir font-bold text-green3 text-xl p-1 m-2 ">
               قیمت : {book.price}
