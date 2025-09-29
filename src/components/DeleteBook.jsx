@@ -1,10 +1,11 @@
 import { useSelector, useDispatch } from "react-redux";
 import { deleteBook, selectAll } from "../reducer/BookSlice";
 import { FaTrashAlt } from "react-icons/fa";
+import { selectBooksWithGenre } from "../reducer/selectors/selector";
 
 const DeleteBook = () => {
   const dispatch = useDispatch();
-  const books = useSelector(selectAll);
+  const books = useSelector(selectBooksWithGenre);
 
   // const SubmitHandler = () => {
   //   dispatch(deleteBook(book.id));
@@ -34,7 +35,7 @@ const DeleteBook = () => {
                 سال : {book.year}
               </h1>
               <h1 className="font-Vazir font-bold text-green3 py-2 text-center  ">
-                ژانر : {book.genre}
+                ژانر : {book.genreName}
               </h1>
               <h1 className="font-Vazir font-bold text-green3 py-2 text-center  ">
                 قیمت : {book.price}
