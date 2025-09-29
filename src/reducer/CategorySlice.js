@@ -41,6 +41,7 @@ export const deleteCategory = createAsyncThunk(
       const response = await axios.delete(
         `http://localhost:9000/category/${initialcatId}`
       );
+      return response.data;
     } catch (err) {
       console.log(err);
     }
