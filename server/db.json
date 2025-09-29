@@ -5,7 +5,7 @@
       "title": "صد سال تنهایی",
       "author": "گابریل گارسیا مارکز",
       "year": 1967,
-      "genre": "رمان",
+      "genre": "15",
       "price": "250000",
       "image": "/images/1.webp"
     },
@@ -14,7 +14,7 @@
       "title": "جنایت و مکافات",
       "author": "فئودور داستایوفسکی",
       "year": 1866,
-      "genre": "داستان کلاسیک",
+      "genre": "11 ",
       "price": 180000,
       "image": "/images/2.webp"
     },
@@ -23,7 +23,7 @@
       "title": "قلعه حیوانات",
       "author": "جرج اورول",
       "year": 1945,
-      "genre": "داستان سیاسی",
+      "genre": "10",
       "price": "130000",
       "image": "/images/4.webp"
     },
@@ -32,7 +32,7 @@
       "title": "کیمیاگر",
       "author": "پائولو کوئیلو",
       "year": "1988",
-      "genre": "رمان فلسفی",
+      "genre": "13 ",
       "price": "95000",
       "image": "/images/3.webp"
     },
@@ -41,7 +41,7 @@
       "title": "شازده کوچولو",
       "author": "آنتوان دوسنت اگزوپری",
       "year": "1943",
-      "genre": "داستان",
+      "genre": "12",
       "price": "80000",
       "image": "/images/5.webp"
     },
@@ -50,7 +50,7 @@
       "title": "پیرمرد و دریا",
       "author": "ارنست همینگوی",
       "year": "1952",
-      "genre": "رمان کوتاه",
+      "genre": "14 ",
       "price": "70000",
       "image": "/images/6.webp"
     },
@@ -59,7 +59,7 @@
       "title": "بینوایان",
       "author": "ویکتور هوگو",
       "year": "1862",
-      "genre": "رمان",
+      "genre": "15",
       "price": "150000",
       "image": "/images/7.webp"
     }
