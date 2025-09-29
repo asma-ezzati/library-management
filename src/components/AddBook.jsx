@@ -1,20 +1,22 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addBooks } from "../reducer/BookSlice";
+import { selectAllCat } from "../reducer/CategorySlice";
 
 const AddBook = () => {
+  const categories = useSelector(selectAllCat);
   const dispatch = useDispatch();
   const [title, setTitle] = useState();
   const [author, setAuthor] = useState();
   const [year, setYear] = useState();
-  const [genre, setGenre] = useState();
+  const [genreId, setGenreId] = useState();
   const [price, setPrice] = useState();
   const [image, setImage] = useState();
 
   const onChangeTitle = (e) => setTitle(e.target.value);
   const onChangeAuthor = (e) => setAuthor(e.target.value);
   const onChangeYear = (e) => setYear(e.target.value);
-  const onChangeGenre = (e) => setGenre(e.target.value);
+  const onChangeGenre = (e) => setGenreId(e.target.value);
   const onChangePrice = (e) => setPrice(e.target.value);
   const onChangeImage = (e) => setImage(e.target.value);
 
@@ -24,7 +26,7 @@ const AddBook = () => {
         title: title,
         author: author,
         year: year,
-        genre: genre,
+        genre: genreId,
         price: price,
         image: `/images/${image}`,
       })
@@ -32,7 +34,7 @@ const AddBook = () => {
     setTitle(" ");
     setAuthor(" ");
     setYear(" ");
-    setGenre(" ");
+    setGenreId(" ");
     setPrice(" ");
     setImage(" ");
   };
@@ -92,13 +94,20 @@ const AddBook = () => {
           >
             ژانر
           </label>
-          <input
-            value={genre}
+          <select
+            value={genreId}
             onChange={onChangeGenre}
             id="genre"
             type="text"
             className="w-full p-2 rounded-lg font-Vazir text-green3 m-2 bg-white border-2 border-pink2 focus:outline-pink1"
-          />
+          >
+            <option value="">انتخاب ژانر</option>
+            {categories.map((category) => (
+              <option key={category.id} value={category.id}>
+                {category.genre}
+              </option>
+            ))}
+          </select>
 
           <label
             htmlFor="price"
