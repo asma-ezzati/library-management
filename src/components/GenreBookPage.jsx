@@ -22,7 +22,9 @@ const GenreBookPage = () => {
           <HiOutlineHome size={30} />
         </Link>
         {Books.length === 0 ? (
-          <h1>کتابی با این ژانر پیدا نشد عزیزم</h1>
+          <h1 className="text-center font-Vazir text-green3 font-bold text-3xl py-6">
+            کتابی با این ژانر پیدا نشد عزیزم
+          </h1>
         ) : (
           <div className="flex justify-around flex-row flex-wrap">
             {Books.map((book) => (
