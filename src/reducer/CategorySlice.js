@@ -24,9 +24,12 @@ export const fetchCategory = createAsyncThunk(
 
 export const addCategory = createAsyncThunk(
   "category/addCategory",
-  async () => {
+  async (initialCat) => {
     try {
-      const response = await axios.post(" http://localhost:9000/category");
+      const response = await axios.post(
+        " http://localhost:9000/category",
+        initialCat
+      );
       return response.data;
     } catch (err) {
       console.log(err);
