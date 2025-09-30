@@ -13,3 +13,8 @@ export const selectBooksWithGenre = createSelector(
       };
     })
 );
+
+export const selectBooksByGenre = createSelector(
+  [selectAll, (_, genreId) => genreId],
+  (books, genreId) => books.filter((book) => book.genre === genreId)
+);
