@@ -9,6 +9,7 @@ import EditBook from "../components/EditBook";
 import DeleteBook from "../components/DeleteBook";
 import EditBookForm from "../components/EditBookForm";
 import AddCategoryPage from "../components/AddCategorypage";
+import GenreBookPage from "../components/GenreBookPage";
 
 export const router = createBrowserRouter([
   {
@@ -52,5 +53,9 @@ export const router = createBrowserRouter([
         element: <AddCategoryPage />,
       },
     ],
+  },
+  {
+    path: "/genre/:genreId",
+    element: <GenreBookPage />,
   },
 ]);
