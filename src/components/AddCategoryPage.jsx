@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addCategory, selectAllCat } from "../reducer/CategorySlice";
+import {
+  addCategory,
+  deleteCategory,
+  selectAllCat,
+} from "../reducer/CategorySlice";
+import { TiDeleteOutline } from "react-icons/ti";
 
 const AddCategoryPage = () => {
   const categoris = useSelector(selectAllCat);
@@ -45,8 +50,11 @@ const AddCategoryPage = () => {
       <main className="w-[50%] mx-[220px] flex justify-center items-center bg-white p-8 m-5 rounded-xl border-2 border-pink1">
         <ul className="flex flex-wrap list-disc ">
           {categoris.map((cat) => (
-            <li key={cat.id} className="m-3 font-Vazir text-green3 p-1">
+            <li key={cat.id} className="mx-3  font-Vazir text-green3 p-1">
               {cat.genre}
+              <button onClick={() => dispatch(deleteCategory(cat.id))}>
+                <TiDeleteOutline className="hover:text-pink1 " size={20} />
+              </button>
             </li>
           ))}
         </ul>
