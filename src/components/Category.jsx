@@ -12,9 +12,14 @@ const Category = () => {
             دسته بندی کتاب ها
           </h1>
         </div>
-        <div className="flex justify-around flex-row ">
+        <div className="flex justify-around flex-row flex-wrap ">
           {categories.map((cat) => (
-            <Link to={`/genre/${cat.id}`} key={cat.id}>
+            <Link
+              to={`/genre/${cat.id}`}
+              key={cat.id}
+              className="w-1/4  p-5 m-5 rounded-xl bg-white text-center font-Vazir text-green3 font-bold text-lg shadow-2xl 
+              hover:transition-transform hover:-translate-y-5 hover:duration-150 transition duration-150 "
+            >
               {cat.genre}
             </Link>
           ))}
