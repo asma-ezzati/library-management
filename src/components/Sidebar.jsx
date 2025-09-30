@@ -1,11 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
-import { FaPlus, FaEdit, FaTrashAlt } from "react-icons/fa";
+import { FaPlus, FaEdit, FaTrashAlt, FaFolderPlus } from "react-icons/fa";
 import { IoMdExit } from "react-icons/io";
 
 const Sidebar = () => {
   return (
     <>
-      <div className=" w-[80px] h-[300px] bg-white m-5 rounded-xl flex flex-wrap flex-col p-5  ">
+      <div className=" w-[80px] h-[400px] bg-white m-5 rounded-xl flex flex-wrap flex-col p-5  ">
         <NavLink
           to={"/admin/edititem"}
           className={({ isActive }) =>
@@ -29,6 +29,14 @@ const Sidebar = () => {
           }
         >
           <FaTrashAlt size={30} />
+        </NavLink>
+        <NavLink
+          to={"/admin/addcategory"}
+          className={({ isActive }) =>
+            `my-4 mx-auto ${isActive ? "text-pink1" : "text-green2"} `
+          }
+        >
+          <FaFolderPlus size={30} />
         </NavLink>
         <NavLink
           to={"/"}
