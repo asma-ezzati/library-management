@@ -101,9 +101,15 @@ const AddBook = () => {
             type="text"
             className="w-full p-2 rounded-lg font-Vazir text-green3 m-2 bg-white border-2 border-pink2 focus:outline-pink1"
           >
-            <option value="">انتخاب ژانر</option>
+            <option value="" className="w-60 font-Vazir bg-white  text-green3">
+              انتخاب ژانر
+            </option>
             {categories.map((category) => (
-              <option key={category.id} value={category.id}>
+              <option
+                key={category.id}
+                value={category.id}
+                className="w-60 font-Vazir bg-white  text-green3"
+              >
                 {category.genre}
               </option>
             ))}
