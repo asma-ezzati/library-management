@@ -8,6 +8,7 @@ import AddBook from "../components/AddBook";
 import EditBook from "../components/EditBook";
 import DeleteBook from "../components/DeleteBook";
 import EditBookForm from "../components/EditBookForm";
+import AddCategoryPage from "../components/AddCategorypage";
 
 export const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ export const router = createBrowserRouter([
       {
         path: "/admin/deleteitem",
         element: <DeleteBook />,
+      },
+      {
+        path: "/admin/addcategory",
+        element: <AddCategoryPage />,
       },
     ],
   },
