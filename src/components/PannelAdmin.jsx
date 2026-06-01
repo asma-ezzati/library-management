@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
 
-const PannelAdmin = () => {
+const PanelAdmin = () => {
   return (
     <>
       <div className=" bg-pink2 min-h-screen  ">
@@ -20,4 +20,4 @@ const PannelAdmin = () => {
     </>
   );
 };
-export default PannelAdmin;
+export default PanelAdmin;
