@@ -1,15 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
-import SignupPage from "../components/SignupPage";
-import BooksList from "../components/BooksList";
-import SingleBooksPage from "../components/SingleBooksPage";
+import App from "../App.jsx";
+import SignupPage from "../components/SignupPage.jsx";
+import BooksList from "../components/BooksList.jsx";
+import SingleBooksPage from "../components/SingleBooksPage.jsx";
 import Admin from "../components/Admin.jsx";
-import AddBook from "../components/AddBook";
-import EditBook from "../components/EditBook";
-import DeleteBook from "../components/DeleteBook";
-import EditBookForm from "../components/EditBookForm";
-import AddCategoryPage from "../components/AddCategorypage";
-import GenreBookPage from "../components/GenreBookPage";
+import AddBook from "../components/AddBook.jsx";
+import EditBook from "../components/EditBook.jsx";
+import DeleteBook from "../components/DeleteBook.jsx";
+import EditBookForm from "../components/EditBookForm.jsx";
+import AddCategoryPage from "../components/AddCategoryPage.jsx";
+import GenreBookPage from "../components/GenreBookPage.jsx";
 
 export const router = createBrowserRouter([
   {
