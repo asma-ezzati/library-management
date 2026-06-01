@@ -3,7 +3,7 @@ import App from "../App";
 import SignupPage from "../components/SignupPage";
 import BooksList from "../components/BooksList";
 import SingleBooksPage from "../components/SingleBooksPage";
-import PannelAdmin from "../components/pannelAdmin";
+import PannelAdmin from "../components/PannelAdmin";
 import AddBook from "../components/AddBook";
 import EditBook from "../components/EditBook";
 import DeleteBook from "../components/DeleteBook";
