@@ -3,7 +3,7 @@ import App from "../App";
 import SignupPage from "../components/SignupPage";
 import BooksList from "../components/BooksList";
 import SingleBooksPage from "../components/SingleBooksPage";
-import Admin from "../components/Admin";
+import Admin from "../components/Admin.jsx";
 import AddBook from "../components/AddBook";
 import EditBook from "../components/EditBook";
 import DeleteBook from "../components/DeleteBook";
