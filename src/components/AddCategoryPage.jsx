@@ -7,7 +7,7 @@ import {
 } from "../reducer/CategorySlice";
 import { TiDeleteOutline } from "react-icons/ti";
 
-const AddCategoryPage = () => {
+const AddCategoriesPage = () => {
   const categoris = useSelector(selectAllCat);
   const dispatch = useDispatch();
   const [genre, setGenre] = useState();
@@ -62,4 +62,4 @@ const AddCategoryPage = () => {
     </>
   );
 };
-export default AddCategoryPage;
+export default AddCategoriesPage;

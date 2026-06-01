@@ -8,7 +8,7 @@ import AddBook from "../components/AddBook.jsx";
 import EditBook from "../components/EditBook.jsx";
 import DeleteBook from "../components/DeleteBook.jsx";
 import EditBookForm from "../components/EditBookForm.jsx";
-import AddCategoryPage from "../components/AddCategoryPage.jsx";
+import AddCategoriesPage from "../components/AddCategoriesPage.jsx";
 import GenreBookPage from "../components/GenreBookPage.jsx";
 
 export const router = createBrowserRouter([
@@ -50,7 +50,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/admin/addcategory",
-        element: <AddCategoryPage />,
+        element: <AddCategoriesPage />,
       },
     ],
   },
