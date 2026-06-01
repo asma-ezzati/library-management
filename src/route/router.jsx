@@ -3,7 +3,7 @@ import App from "../App";
 import SignupPage from "../components/SignupPage";
 import BooksList from "../components/BooksList";
 import SingleBooksPage from "../components/SingleBooksPage";
-import PanelAdmin from "../components/PanelAdmin";
+import Admin from "../components/Admin";
 import AddBook from "../components/AddBook";
 import EditBook from "../components/EditBook";
 import DeleteBook from "../components/DeleteBook";
@@ -30,7 +30,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/admin",
-    element: <PanelAdmin />,
+    element: <Admin />,
     children: [
       {
         path: "/admin/additem",
