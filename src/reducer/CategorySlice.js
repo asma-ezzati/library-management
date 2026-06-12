@@ -14,7 +14,9 @@ export const fetchCategory = createAsyncThunk(
   "category/fetchCategory",
   async () => {
     try {
-      const response = await axios.get(" http://localhost:9000/category");
+      const response = await axios.get(
+        " https://6a2bc3b93e2b60ab038ec67b.mockapi.io/api/v1/category"
+      );
       return response.data;
     } catch (err) {
       console.log(err);

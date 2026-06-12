@@ -6,7 +6,7 @@ import {
 } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const url = "http://localhost:9000/books";
+const url = "https://6a2bc3b93e2b60ab038ec67b.mockapi.io/api/v1/books";
 
 const booksAdapter = createEntityAdapter({
   // sortComparer: (a, b) => a.title.localeCompare(b.title),
